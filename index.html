@@ -532,9 +532,9 @@
             { 
                 title: "الأسبوع الأول: مدخل إلى عالم الذكاء الاصطناعي والبحث", 
                 lectures: [
-                    { title: "مدخل لعالم الذكاء الاصطناعي", url: "https://t.me/c/3281058204/5/121" },
-                    { title: "ازاي تتواصل صح", url: "https://t.me/c/3281058204/5/127" },
-                    { title: "البحث في عصر الـ AI", url: "https://t.me/c/3281058204/5/145" },
+                    { title: "مدخل لعالم الذكاء الاصطناعي", url: "https://t.me/c/2947009490/2/111" },
+                    { title: "ازاي تتواصل صح", url: "https://t.me/c/2947009490/2/168" },
+                    { title: "البحث في عصر الـ AI", url: "https://t.me/c/2947009490/2/169" },
                 ],
                 guides: [
                     { title: "مدخل لعالم الذكاء الاصطناعي", url: "https://drive.google.com/file/d/11SXSzt5_lGd4H9t2wTozYSFNVGH8AZSl/view?usp=sharing" },
@@ -548,20 +548,18 @@
             { 
                 title: "الأسبوع الثاني: المساعد الشخصي والتعلم الفعال", 
                 lectures: [
-                    { title: "دليلك لبناء مساعد شخصي", url: "https://t.me/c/3281058204/6/123" },
-                    { title: "التعلم في عصر الـ AI", url: "https://t.me/c/2947009490/2/184" },
-                    { title: "انفوجرافيك وبريزنتيشن احترافية", url: "https://t.me/c/2947009490/2/353" },
+                    { title: "التعلم في عصر الـ AI", url: "https://t.me/c/3281058204/5/255" },
+                    { title: "انفوجرافيك وبريزنتيشن احترافية", url: "https://t.me/c/3281058204/5/270" },
                 ],
                 guides: [
-                    { title: "دليلك لبناء مساعد شخصي", url: "https://drive.google.com/file/d/1-XK3ID_S5NGh--tyanF623yxcU6rvBQI/view?usp=sharing" },
-                    { title: "التعلم في عصر الـ AI", url: "https://drive.google.com/file/d/1X8k3Q4kzHiqvMy64y3mKLuZ1zSa9XWHO/view?usp=sharing" },
-                    { title: "دليل الانفوجرافيك والبريزنتيشن", url: "https://drive.google.com/file/d/1Mrs1dokNwlXZygBWNZnqbI1T0fmC-VCi/view?usp=sharing" },
+                    { title: "التعلم في عصر الـ AI", url: "https://drive.google.com/drive/folders/17cS6wn_E9gVGV6iVgF2fyreUKmbSse2K?usp=sharing" },
+                    { title: "دليل الانفوجرافيك والبريزنتيشن", url: "https://drive.google.com/drive/folders/19hdU1_8DYfYODR_NvGrQTmK264v1lh8X?usp=sharing" },
                 ]
             },
             { 
                 title: "الأسبوع الثالث: صناعة الصور الاحترافية", 
-                lectures: [{ title: "صور احترافية", url: "https://t.me/c/2947009490/2/454" }], 
-                guides: [{ title: "الدليل الشامل لعمل صور احترافية", url: "https://drive.google.com/file/d/1uOyFmbK0FwjE9J1Qru1VYHKgXl0iEKnC/view?usp=sharing" }]
+                lectures: [{ title: "صور احترافية", url: "https://t.me/c/3281058204/5/349" }], 
+                guides: [{ title: "الدليل الشامل لعمل صور احترافية", url: "https://drive.google.com/drive/folders/1gwPV5kvIDN3p85ypQUtVeCZdIT0z1G4s?usp=sharing" }]
             },
             { 
                 title: "الأسبوع الرابع: صناعة الصوت", 
@@ -591,12 +589,12 @@
                     { title: "دعوة مجانية لـ Perplexity Pro", url: "https://pplx.ai/mahmoud18h2531" }
                 ]
             },
-            { title: "الأسبوع السابع: المشروع النهائي", lectures: null, guides: null },
+            { title: "الأسبوع الثامن: المشروع النهائي", lectures: null, guides: null },
         ];
 
         const LECTURE_COMPLETION_KEY = 'lectureCompletionStatus';
         const LecturesTab = ({ setModalMessage }) => {
-            const CURRENT_WEEK_INDEX = 0; // Week 1 is active
+            const CURRENT_WEEK_INDEX = 2; // Week 1, 2, and 3 are active
             const [openWeek, setOpenWeek] = useState(lecturesData[0]?.title || null);
             const [completedLectures, setCompletedLectures] = useState(() => {
                 try {
@@ -763,12 +761,12 @@
         // TasksTab.tsx
         const tasksData = [
             { title: "تاسكات الأسبوع الأول", deadline: "21 نوفمبر 2025", tasks: ["مشاركة محادثتين مختلفين، استخدمت فيهم أوامر احترافية", "عمل بحث شامل عن موضوع انت مهتم بيه ومشاركته معانا"] },
-            { title: "تاسكات الأسبوع الثاني", deadline: "28 نوفمبر 2025", tasks: ["مشاركة رابط المساعد الشخصي الذي قمت ببنائه.", "إنشاء ومشاركة Notebook على NotebookLM لموضوع تقوم بتعلمه.", "تصميم ومشاركة انفوجرافيك واحد على الأقل.", "عمل بريزنتيشن احترافية عن موضوع يخص شغلك أو دراستك"] },
-            { title: "تاسكات الأسبوع الثالث", deadline: "5 ديسمبر 2025", tasks: ["عمل 3 صور على الأقل بأفكار مختلفة."] },
-            { title: "تاسكات الأسبوع الرابع", deadline: "12 ديسمبر 2025", tasks: ["إنشاء ومشاركة مقطع صوتي احترافي.", "تجربة تحويل صوت إلى صوت ومشاركة المقطعين.", "تجربة استنساخ صوتك أو أي صوت آخر."] },
-            { title: "تاسكات الأسبوع الخامس", deadline: "19 ديسمبر 2025", tasks: ["عمل فيديو احترافي واحد على الأقل + افاتار متكلم."] },
-            { title: "تاسكات الأسبوع السادس", deadline: "26 ديسمبر 2025", tasks: ["عمل تطبيق أو موقع لفكرة أو عمل خاص بك."] },
-            { title: "الأسبوع السابع: المشروع النهائي", deadline: "9 يناير 2026", tasks: ["عمل فيديو احترافي كامل (لا يقل عن 30 ثانية) مع مشاركة الأدوات المستخدمة."], isFinal: true },
+            { title: "تاسكات الأسبوع الثاني", deadline: "28 نوفمبر 2025", tasks: ["إنشاء ومشاركة Notebook على NotebookLM لموضوع تقوم بتعلمه.", "تصميم ومشاركة انفوجرافيك واحد على الأقل أو عمل بريزنتيشن احترافية عن موضوع يخص شغلك أو دراستك"] },
+            { title: "تاسكات الأسبوع الثالث", deadline: "8 ديسمبر 2025", tasks: ["عمل 3 صور على الأقل بأفكار مختلفة."] },
+            { title: "تاسكات الأسبوع الرابع", deadline: "15 ديسمبر 2025", tasks: ["إنشاء ومشاركة مقطع صوتي احترافي.", "تجربة تحويل صوت إلى صوت ومشاركة المقطعين.", "تجربة استنساخ صوتك أو أي صوت آخر."] },
+            { title: "تاسكات الأسبوع الخامس", deadline: "22 ديسمبر 2025", tasks: ["عمل فيديو احترافي واحد على الأقل + افاتار متكلم."] },
+            { title: "تاسكات الأسبوع السادس", deadline: "29 ديسمبر 2025", tasks: ["عمل تطبيق أو موقع لفكرة أو عمل خاص بك."] },
+            { title: "الأسبوع السابع: المشروع النهائي", deadline: "12 يناير 2026", tasks: ["عمل فيديو احترافي كامل (لا يقل عن 30 ثانية) مع مشاركة الأدوات المستخدمة."], isFinal: true },
         ];
 
         const TASK_COMPLETION_KEY = 'taskCompletionStatus';
@@ -851,7 +849,7 @@
         // --- END LockedTaskCard Component ---
 
         const TasksTab = ({ setModalMessage }) => {
-            const CURRENT_WEEK_INDEX = 0; // Week 1 is active
+            const CURRENT_WEEK_INDEX = 2; // Week 1 AND 2 are active
             const [completedTasks, setCompletedTasks] = useState(() => {
                 try {
                     const saved = localStorage.getItem(TASK_COMPLETION_KEY);
@@ -961,14 +959,14 @@
                 title: "صور", 
                 icon: "image", 
                 tools: [
-                    { name: "Midjourney", url: "https://www.midjourney.com/" }, 
-                    { name: "Ideogram", url: "https://ideogram.ai/" }, 
-                    { name: "Google Gemini", url: "https://gemini.google.com/" },
-                    { name: "Google AI Studio", url: "https://aistudio.google.com/prompts/new_chat?model=gemini-2.5-flash-image" },
-                    { name: "Meta AI", url: "https://www.meta.ai/" },
-                    { name: "Copilot", url: "https://copilot.microsoft.com/" },
                     { name: "LMArena.ai", url: "https://lmarena.ai/" },
-                    { name: "Whisk", url: "https://labs.google/fx/tools/whisk?utm_source=substack&utm_medium=email" }
+                    { name: "Meta AI", url: "https://www.meta.ai/" },
+                    { name: "Whisk", url: "https://labs.google/fx/tools/whisk?utm_source=substack&utm_medium=email" },
+                    { name: "Lovart", url: "https://www.lovart.ai/home" },
+                    { name: "Genspark", url: "https://www.genspark.ai/" },
+                    { name: "Ideogram", url: "https://ideogram.ai/" }, 
+                    { name: "Gemini", url: "https://gemini.google.com/" },
+                    { name: "Copilot", url: "https://copilot.microsoft.com/" },
                 ] 
             },
             { 
@@ -996,6 +994,9 @@
                 title: "فيديو", 
                 icon: "video", 
                 tools: [
+                    { name: "Meta AI", url: "https://www.meta.ai/" },
+                    { name: "Wan", url: "https://create.wan.video/explore" },
+                    { name: "Pixverse", url: "https://app.pixverse.ai/onboard" },
                     { name: "Runway", url: "https://runwayml.com/" },
                     { name: "Flow", url: "https://labs.google/fx/tools/flow/project/ce8fcb35-6af4-4e51-9971-32a76da8aeaf" },
                     { name: "Sora", url: "https://sora.com/explore" },
@@ -1049,7 +1050,7 @@
                     </button>
                     <div
                         className="accordion-content"
-                        style={{ maxHeight: isOpen ? '1500px' : '0' }} // FIX: Use large fixed max-height
+                        style={{ maxHeight: isOpen ? '5000px' : '0' }} // FIX: Use large fixed max-height
                     >
                         <div className="p-5 border-t border-gray-200">
                             <ul className="list-disc list-inside space-y-2 pt-4 text-text-dark">
@@ -1238,7 +1239,7 @@
                         >
                             <ul className="space-y-2 mt-4 text-gray-700">
                                 <li>
-                                    <a href="https://t.me/c/3281058204/6/123" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-white/10 transition-colors w-full">
+                                    <a href="https://t.me/c/2947009490/2/652" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 p-3 rounded-lg hover:bg-gray-50 dark:hover:bg-white/10 transition-colors w-full">
                                         <Icon name="play-circle" className="w-5 h-5 text-[--accent-green] flex-shrink-0" />
                                         <span className="flex-grow">المساعدون الشخصيون (المحاضرة)</span>
                                         <Icon name="external-link" className="w-5 h-5 text-gray-400" />
