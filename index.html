@@ -563,8 +563,8 @@
             },
             { 
                 title: "الأسبوع الرابع: صناعة الصوت", 
-                lectures: [{ title: "ازاي تعمل صوت احترافي", url: "https://t.me/c/2947009490/2/359" }], 
-                guides: [{ title: "الدليل الشامل لجميع المحاضرات", url: "https://drive.google.com/file/d/1SIIryeLOx6bhbTgcSpPRufH_ETe0BjVW/view?usp=sharing" }]
+                lectures: [{ title: "ازاي تعمل صوت احترافي", url: "https://t.me/c/3281058204/5/384" }], 
+                guides: [{ title: "دليلك لعمل صوت احترافي", url: "https://drive.google.com/drive/folders/1ZUsaJllClCUkrxgH0hADzsPsLziWG1TV?usp=sharing" }]
             },
             { 
                 title: "الأسبوع الخامس: صناعة الفيديو الاحترافي", 
@@ -594,7 +594,7 @@
 
         const LECTURE_COMPLETION_KEY = 'lectureCompletionStatus';
         const LecturesTab = ({ setModalMessage }) => {
-            const CURRENT_WEEK_INDEX = 2; // Week 1, 2, and 3 are active
+            const CURRENT_WEEK_INDEX = 3; // Week 1, 2, 3 and 4 are active
             const [openWeek, setOpenWeek] = useState(lecturesData[0]?.title || null);
             const [completedLectures, setCompletedLectures] = useState(() => {
                 try {
@@ -763,7 +763,7 @@
             { title: "تاسكات الأسبوع الأول", deadline: "21 نوفمبر 2025", tasks: ["مشاركة محادثتين مختلفين، استخدمت فيهم أوامر احترافية", "عمل بحث شامل عن موضوع انت مهتم بيه ومشاركته معانا"] },
             { title: "تاسكات الأسبوع الثاني", deadline: "28 نوفمبر 2025", tasks: ["إنشاء ومشاركة Notebook على NotebookLM لموضوع تقوم بتعلمه.", "تصميم ومشاركة انفوجرافيك واحد على الأقل أو عمل بريزنتيشن احترافية عن موضوع يخص شغلك أو دراستك"] },
             { title: "تاسكات الأسبوع الثالث", deadline: "8 ديسمبر 2025", tasks: ["عمل 3 صور على الأقل بأفكار مختلفة."] },
-            { title: "تاسكات الأسبوع الرابع", deadline: "15 ديسمبر 2025", tasks: ["إنشاء ومشاركة مقطع صوتي احترافي.", "تجربة تحويل صوت إلى صوت ومشاركة المقطعين.", "تجربة استنساخ صوتك أو أي صوت آخر."] },
+            { title: "تاسكات الأسبوع الرابع", deadline: "15 ديسمبر 2025", tasks: ["عمل مقطع صوتي (من نص لصوت)", "استنساخ صوتك أو صوت أي حد مشهور"] },
             { title: "تاسكات الأسبوع الخامس", deadline: "22 ديسمبر 2025", tasks: ["عمل فيديو احترافي واحد على الأقل + افاتار متكلم."] },
             { title: "تاسكات الأسبوع السادس", deadline: "29 ديسمبر 2025", tasks: ["عمل تطبيق أو موقع لفكرة أو عمل خاص بك."] },
             { title: "الأسبوع السابع: المشروع النهائي", deadline: "12 يناير 2026", tasks: ["عمل فيديو احترافي كامل (لا يقل عن 30 ثانية) مع مشاركة الأدوات المستخدمة."], isFinal: true },
@@ -849,7 +849,7 @@
         // --- END LockedTaskCard Component ---
 
         const TasksTab = ({ setModalMessage }) => {
-            const CURRENT_WEEK_INDEX = 2; // Week 1 AND 2 are active
+            const CURRENT_WEEK_INDEX = 3; // Week 1, 2, 3 and 4 are active
             const [completedTasks, setCompletedTasks] = useState(() => {
                 try {
                     const saved = localStorage.getItem(TASK_COMPLETION_KEY);
